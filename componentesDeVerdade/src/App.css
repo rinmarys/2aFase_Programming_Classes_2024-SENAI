@@ -1,1 +1,7 @@
-
+body{
+    background-color: var(--cor-3);
+    color: var(--cor-4);
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 30px;
+}
