@@ -3,18 +3,21 @@ import './Exemplo.css'
 
 function Exemplo() {
 
-    const [resultado, setResultado] = useState(0)
+  const [resultado, setResultado] = useState(0)
 
-    function aumentar(params) {
-        setResultado(resultado + 1)
-    }
+  function aumentar(params) {
+    setResultado(resultado + 1)
+  }
 
-    function diminuir(params) {
-        setResultado(resultado - 1)
-    }
+  function diminuir(params) {
+    setResultado(resultado - 1)
+  }
 
   return (
-    <div className="Exemplo-container">
+
+    <center>
+
+      <div className="Exemplo-container">
 
         <h2>Exemplo de cornometro</h2>
 
@@ -22,7 +25,9 @@ function Exemplo() {
         {resultado}
         <button onClick={aumentar}>+</button>
 
-    </div>
+      </div>
+      
+    </center>
   )
 }
 

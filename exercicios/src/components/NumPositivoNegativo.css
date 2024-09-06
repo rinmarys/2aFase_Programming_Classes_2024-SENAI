@@ -1,7 +1,7 @@
 .numeros-positivo-negativo-nulo{
-    border: 1px dotted aliceblue;
+    border: 1px dotted #e0e1dd;
     padding: 10px;
     border-radius: 10px;
     width: fit-content;
-    margin: 10px;
+    margin: 25px;
 }
