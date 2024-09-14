@@ -3,6 +3,12 @@ import './App.css'
 import DiaDaSemana from './components/DiaDaSemana'
 import MaiorIdade from './components/MaiorIdade'
 import MenorIdade from './components/MenorIdade'
+import ParEImpar from './components/ParEImpar'
+import CalculadoraSimples from './components/CalculadoraSimples'
+import SenhaSegura from './components/SenhaSegura'
+import ClassificacaoNotas from './components/ClassificacaoNotas'
+import ComparacaoNumeros from './components/ComparacaoNumeros'
+import MensagemSecreta from './components/MensagemSecreta'
 
 function App() {
   const [inputIdade, setInputIdade] = useState(0)
@@ -26,13 +32,56 @@ function App() {
 
   return (
     <>
+
+      {/* Atividade 8 - Mensagem secreta
+    Mensagem Secreta: Peça ao usuário para digitar uma senha e, se a senha for "abracadabra", exiba uma mensagem secreta. */}
+      <div>
+        <MensagemSecreta />
+      </div>
+
+      {/* Atividade 7 - Comparação de números
+      Peça ao usuário para inserir dois números e determine qual deles é maior. */}
+      <div>
+        <ComparacaoNumeros />
+      </div>
+
+      {/* Atividade 6 - CLassificação de notas
+      Classificação de Notas: Peça ao usuário para inserir sua nota em uma escala de 
+      0 a 100 e, em seguida, atribua uma classificação (A, B, C, D ou E) com base na nota. */}
+      <div>
+        <ClassificacaoNotas />
+      </div>
+
+      {/* Atividade 5 - Senha segura
+      Peça ao usuário para criar uma senha. Verifique se a senha 
+      tem pelo menos 8 caracteres. */}
+      <div>
+        <SenhaSegura />
+      </div>
+
+      {/* Atividade 4 - Calculadora simples
+      Calculadora Simples: Crie uma calculadora simples que peça ao usuário
+      dois números e uma operação (adição, subtração, multiplicação ou divisão)
+      e, em seguida, exiba o resultado. */}
+      <div>
+        <CalculadoraSimples />
+      </div>
+
+      {/* Atividade 3 - Número par e impar
+      Verificando Números Pares: Peça ao usuário para 
+      inserir um número e, em seguida, determine se 
+      é par ou ímpar. */}
+      <div>
+        <ParEImpar />
+      </div>
+
       {/* Atividade 2 - Dia da semana */}
 
       {/* Dia da Semana: Peça ao usuário que insira um número de 1 a 7 e, 
       em seguida, mostre o dia da semana correspondente 
       (por exemplo, 1 = Domingo, 2 = Segunda, etc.). */}
       <div>
-      <DiaDaSemana />
+        <DiaDaSemana />
       </div>
 
 

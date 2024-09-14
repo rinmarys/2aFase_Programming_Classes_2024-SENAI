@@ -1,0 +1,7 @@
+.senhaSegura-container{
+        border: 1px solid rgba(0, 0, 0, 0.699);
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px #457b9d;
+}
