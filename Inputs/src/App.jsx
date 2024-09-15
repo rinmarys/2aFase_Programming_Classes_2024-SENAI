@@ -9,6 +9,7 @@ import SenhaSegura from './components/SenhaSegura'
 import ClassificacaoNotas from './components/ClassificacaoNotas'
 import ComparacaoNumeros from './components/ComparacaoNumeros'
 import MensagemSecreta from './components/MensagemSecreta'
+import DecisaoCompra from './components/DecisaoCompra'
 
 function App() {
   const [inputIdade, setInputIdade] = useState(0)
@@ -32,6 +33,24 @@ function App() {
 
   return (
     <>
+
+      {/* Atividade 12 - Idade de cachorros
+      Peça ao usuário que insira a idade de seu cachorro e, em seguida, calcule a idade
+      do cachorro em anos humanos (um ano de cachorro equivale a sete anos humanos). 
+      Informe se o doguinho já pode se aposentar por idade :D */}
+      <div>
+        <IdadeCachorros />
+      </div>
+
+      {/* Atividade 11 - Decisão de compra
+      Decisão de Compra: Peça ao usuário para inserir o preço de um item e seu saldo.
+      Em seguida, determine se eles podem comprar o item ou não. */}
+      <div>
+        <DecisaoCompra />
+      </div>
+
+      {/* Atividade 10 - Jogo de adivinhação
+      Ativida 9 - Verificadno ano bissexto */}
 
       {/* Atividade 8 - Mensagem secreta
     Mensagem Secreta: Peça ao usuário para digitar uma senha e, se a senha for "abracadabra", exiba uma mensagem secreta. */}
