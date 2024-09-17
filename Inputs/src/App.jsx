@@ -10,6 +10,12 @@ import ClassificacaoNotas from './components/ClassificacaoNotas'
 import ComparacaoNumeros from './components/ComparacaoNumeros'
 import MensagemSecreta from './components/MensagemSecreta'
 import DecisaoCompra from './components/DecisaoCompra'
+import IdadeCachorros from './components/IdadeCachorros'
+import IdadeVotar from './components/IdadeVotar'
+import VerificandoLetras from './components/VerificandoLetras'
+import CalculadoraIMC from './components/CalculadoraIMC'
+import ConversorTemperatura from './components/ConversorTemperatura'
+
 
 function App() {
   const [inputIdade, setInputIdade] = useState(0)
@@ -33,6 +39,26 @@ function App() {
 
   return (
     <>
+
+      {/* Atividade 16 - Conversor de Temperatura 
+      Crie um conversor de temperatura que peça ao usuário para inserir 
+      uma temperatura em Celsius e, em seguida, converta-a para Fahrenheit. */}
+      <ConversorTemperatura />
+
+      {/* Atividade 15 - Calculadora de IMC
+      Crie uma calculadora de Índice de Massa Corporal (IMC) que peça ao 
+      usuário seu peso e altura e, em seguida, calcule e exiba o IMC. 
+      Informe também em que faixa o usuário se encontra. */}
+      <CalculadoraIMC />
+
+      {/* Atividade 14 - Verificando Letra Maiúscula
+      Peça ao usuário para inserir uma letra e verifique se ela é maiúscula ou minúscula. */}
+      <VerificandoLetras />
+
+      {/* Atividade 13 - Verificando Votação 
+      Peça ao usuário para inserir sua idade e verifique se
+      ele é elegível para votar (idade mínima de 16 anos). */}
+      <IdadeVotar />
 
       {/* Atividade 12 - Idade de cachorros
       Peça ao usuário que insira a idade de seu cachorro e, em seguida, calcule a idade
