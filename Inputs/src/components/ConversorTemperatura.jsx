@@ -1,27 +1,30 @@
 import React, { useState } from 'react'
+import './ConversorTemperatura.css'
 
 function ConversorTemperatura() {
-    const [temperaturaCelsius, setTemperaturaCelsius] = useState()
-    const [resultado, setResultado] = useState()
+    const [celsius, setCelsius] = useState('')
+    const [fahrenheit, setFahrenheit] = useState(null)
 
-    // Calculos
+    function converter() {
+        const resultado = (Number(celsius) * 9 / 5) + 32
+        setFahrenheit(resultado)
+    }
 
-    
     return (
-        <div>
+        <div className='temperatura-container'>
             <h1>Conversor de temperatura</h1>
+            <h3>de Celsius para Fahrenheit</h3>
 
-            Conversor de temperatura, Celsius para Farenheit
-            <br />
             Digite a temperatura que deseja converter:
             <br />
             <input type="number"
-                value={temperaturaCelsius}
-                onChange={(event) => { setTemperaturaCelsius(event.target.value) }} />
+                value={celsius}
+                onChange={(event) => { setCelsius(event.target.value) }}
+                placeholder='Insira a temperatura em celsius' />
             <br /><br />
-            <button onClick={converter}>Converter para Farenheit</button>
+            <button onClick={converter}>Converter</button>
             <br />
-            {resultado}
+            Temperatura em fahrenheit: {fahrenheit}°F
         </div>
     )
 }

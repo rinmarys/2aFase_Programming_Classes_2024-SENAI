@@ -15,6 +15,10 @@ import IdadeVotar from './components/IdadeVotar'
 import VerificandoLetras from './components/VerificandoLetras'
 import CalculadoraIMC from './components/CalculadoraIMC'
 import ConversorTemperatura from './components/ConversorTemperatura'
+import DiaMes from './components/DiaMes'
+import AnoBissexto from './components/AnoBissexto'
+import JogoAdivinhacao from './components/JogoAdivinhacao'
+
 
 
 function App() {
@@ -22,7 +26,7 @@ function App() {
   const [maiorIdade, setMaiorIdade] = useState(false)
   const [menorIdade, setMenorIdade] = useState(false)
 
-  function processarIdade(params) {
+  function processarIdade() {
 
     if (inputIdade >= 18) {
 
@@ -39,6 +43,11 @@ function App() {
 
   return (
     <>
+
+      {/* Atividade 17 - Dias em um Mês
+      Peça ao usuário para inserir o nome de um mês e, 
+      em seguida, determine quantos dias ele tem. */}
+      <DiaMes />
 
       {/* Atividade 16 - Conversor de Temperatura 
       Crie um conversor de temperatura que peça ao usuário para inserir 
@@ -76,7 +85,14 @@ function App() {
       </div>
 
       {/* Atividade 10 - Jogo de adivinhação
-      Ativida 9 - Verificadno ano bissexto */}
+      Crie um número aleatório entre 1 e 10. Peça ao usuário para adivinhar o número e, 
+      em seguida, diga se eles acertaram ou não. */}
+      <JogoAdivinhacao />
+
+      {/* Ativida 9 - Verificando ano bissexto
+      Peça ao usuário para inserir um ano e determine se ele é bissexto ou não. */}
+      <AnoBissexto />
+
 
       {/* Atividade 8 - Mensagem secreta
     Mensagem Secreta: Peça ao usuário para digitar uma senha e, se a senha for "abracadabra", exiba uma mensagem secreta. */}
