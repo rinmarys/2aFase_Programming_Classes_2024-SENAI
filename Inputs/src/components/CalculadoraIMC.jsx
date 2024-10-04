@@ -24,7 +24,7 @@ function CalculadoraIMC() {
         }else if(imc >= 30){
             setResultadoFaixa('Obesidade')
         }
-        
+
     }
     return (
         <div className='IMC-container'>
